@@ -1,7 +1,7 @@
-# Raspicam-IR-Switch
+# https://hama0013.github.io/Raspicam-IR-Switch/
 Raspicam IR-Switch by location horizont sunrise/sunset calculation
 
-Complete description as HTML
+https://hama0013.github.io/Surveillance/
 
 
 
