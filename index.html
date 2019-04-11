@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 5.2.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2019-04-12T00:09:28.556806045"/>
+	<meta name="changed" content="2019-04-12T00:23:04.840160640"/>
 	<style type="text/css">
 		@page { margin: 2cm }
 		td p { background: transparent; direction: inherit }
@@ -46,7 +46,7 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			<p style="background: transparent"><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><b>Motivation:<br/>
 </b>MotionEye
 			is a great tool for building a surveillance camera. The only
-			problem is the missing night switching functionality but can be
+			problem is the missing IR switching functionality but can be
 			simply integrated via Python programming by using a switchable
 			IR-filter camera over GPIO-port. Additionally an external IR spot
 			light can/should be used for night recordings/views. I recommend
@@ -79,7 +79,7 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			do we need?:</b></font></font></font></p>
 			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt">A
-			RaspberryPi CSI camera with switchable activation port. I
+			RaspberryPi CSI camera with switchable IR activation port. I
 			recommend this one from Banggood: (It can be used any other one,
 			but note the possibility to connect an activation hardware line
 			with 3.3V support)</font></font></font></p>
@@ -103,10 +103,11 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			connection:</b></font></font></font></p>
 			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt">Typically
-			the CSI cable is delivered with the camera. The hardware wire to
-			the activation port must be welded at the camera and connected
-			over single pin connector to the Raspis GPIO-port. I‘m using
-			port 17(Pin 11). That’s all to make it working…</font></font></font></p>
+			the CSI cable is delivered with the camera. But the hardware wire
+			for the IR activator has to be organiced self. The hardware wire
+			to the activation port must be soldered at the camera and
+			connected over single pin connector to the Raspis GPIO-port. I‘m
+			using port 17(Pin 11). That’s all to make it working…</font></font></font></p>
 			<table width="100%" cellpadding="4" cellspacing="0">
 				<col width="256*">
 				<tr>
@@ -134,13 +135,15 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			and install MotionEye manually. Well described here:
 			„<a class="western" href="https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian" name="Motioneye">https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian</a>“</font></font></font></p>
 			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; background: transparent; text-decoration: none">
-			<font color="#000000"><font face="FreeSans, serif"><font size="5" style="font-size: 18pt"><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">All
-			program I‘ve made with Python over the programming software
-			„Geany“. The Python l</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">braries
+			<font color="#000000"><font face="FreeSans, serif"><font size="5" style="font-size: 18pt"><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">I‘ve
+			made </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">a</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">ll
+			</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">coding</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">
+			with Python over the programming software „Geany“. The Python
+			l</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">braries
 			need </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">an
 			</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">a</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">d</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">ditional
 			installation </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">to
-			use the sunrise/sunset calculations from ephem, </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">that
+			use the sunrise/sunset calculations from “ephem”, </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">that
 			can be made very easy with this command in the terminal window:<br/>
 </span></font></font></font></font></font><br/>
 
@@ -157,7 +160,7 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			http://rhodesmill.org/pyephem/“ The changes are</font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">:</span></font></font></font></font></font></p>
 			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt">-
-			additional text output for local limes (current, next
+			additional text output for local times (current, next
 			sunset/sunrise)</font></font></font></p>
 			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt">-
