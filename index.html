@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 5.2.7.2 (Linux)"/>
 	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="2019-04-11T23:54:08.156636674"/>
+	<meta name="changed" content="2019-04-12T00:06:44.046022010"/>
 	<style type="text/css">
 		@page { margin: 2cm }
 		td p { background: transparent; direction: inherit }
@@ -48,12 +48,36 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			is a great tool for building a surveillance camera. The only
 			problem is the missing night switching functionality but can be
 			simply integrated via Python programming by using a switchable
-			IR-filter camera over GPIO-port. Additional an external IR light
-			spot can be used.</font></font></p>
-			<p align="left" style="margin-bottom: 0cm; font-style: normal; orphans: 2; widows: 2; text-decoration: none">
+			IR-filter camera over GPIO-port. Additionally an external IR spot
+			light can/should be used for night recordings/views. I recommend
+			something like this:<br/>
+</font></font><br/>
+<br/>
+
+			</p>
+			<table width="100%" cellpadding="4" cellspacing="0">
+				<col width="256*">
+				<tr>
+					<td width="100%" valign="top" style="border: none; padding: 0cm">
+						<p><img src="horizont_html_d717cfd14f0f99ef.png" name="Image4" align="left" width="856" height="268" border="0"/>
+<br/>
+
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="background: transparent"><br/>
+<br/>
+
+			</p>
+			<p style="background: transparent"><br/>
+<br/>
+
+			</p>
+			<p align="left" style="margin-bottom: 0cm; font-style: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><b>What
 			do we need?:</b></font></font></font></p>
-			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; orphans: 2; widows: 2; text-decoration: none">
+			<p align="left" style="margin-bottom: 0cm; font-style: normal; font-weight: normal; line-height: 0.35cm; orphans: 2; widows: 2; text-decoration: none">
 			<font color="#000000"><font face="Liberation Serif"><font size="3" style="font-size: 12pt">A
 			RaspberryPi CSI camera with switchable activation port. I
 			recommend this one from Banggood: (It can be used any other one,
@@ -82,7 +106,7 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			the CSI cable is delivered with the camera. The hardware wire to
 			the activation port must be welded at the camera and connected
 			over single pin connector to the Raspis GPIO-port. I‘m using
-			port 17(Pin 11). Thats all to make it working…</font></font></font></p>
+			port 17(Pin 11). That’s all to make it working…</font></font></font></p>
 			<table width="100%" cellpadding="4" cellspacing="0">
 				<col width="256*">
 				<tr>
@@ -115,8 +139,9 @@ and </b></u></font></font></font><font color="#cc0000"><font face="Liberation Se
 			„Geany“. The Python l</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">i</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">braries
 			need </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">an
 			</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">a</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">d</span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">ditional
-			installation that can be made very easy with this command in the
-			terminal window:<br/>
+			installation </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">to
+			use the sunrise/sunset calculations from ephem, </span></font></font><font face="Liberation Serif"><font size="3" style="font-size: 12pt"><span style="font-weight: normal">that
+			can be made very easy with this command in the terminal window:<br/>
 </span></font></font></font></font></font><br/>
 
 			</p>
