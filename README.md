@@ -1,6 +1,6 @@
 # https://hama0013.github.io/Raspicam-IR-Switch/
 Raspicam IR-Switch by location horizont sunrise/sunset calculation<br>
-All is well described at the GIT-Web-Site.(link at top)<br>
+All steps are well described at this GIT-Web-Site.(link at top)<br>
 
 The original program is derived from "http://rhodesmill.org/pyephem/" The changes are:
 - additional text output for local times (current, next sunset/sunrise)
