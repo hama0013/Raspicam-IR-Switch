@@ -1,6 +1,5 @@
 #!/usr/local/bin/python
 
-
 # Modified code for PyEphem to use with Motioneye
 # and switchable IR camera at GPIO-port 17
 # The code will decide to turn on/off the IR filter
@@ -79,17 +78,10 @@ def set_IR():
         GPIO.output(17, GPIO.LOW)
 
 
-
-
-
-
-
 if __name__ == '__main__':
 
     while True:
         set_IR()
         time.sleep(60)
-        
-
 
 # end of code
