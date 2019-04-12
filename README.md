@@ -10,8 +10,8 @@ Typically the CSI cable is delivered with the camera. But the hardware wire for 
 ![ScreenShot](https://github.com/hama0013/Raspicam-IR-Switch/blob/master/pic_small/2019-04-11%2022_25_33-CAM_GPIO.png)<br>
 **Software:**<br>
 _**Preparation:**_<br>
-This described integration is not working with MotionEyeOS because of its limited OS. Better is to install latest Raspbian https://www.raspberrypi.org/downloads/raspbian/ and install MotionEye manually. Well described here: https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian
-I‘ve made all coding with Python over the programming software „Geany“. The programing should calculate next nunrise/sunset automatically every minute and decide what's the current situation (day/night) and turn on/of the IR filter over GPIO-17. The Python libraries need an additional installation to use the sunrise/sunset calculations from “ephem”, that can be made very easy with this command in the terminal window:
+This described integration is not working with MotionEyeOS because of its limited OS. Better is to install latest Raspbian https://www.raspberrypi.org/downloads/raspbian/ and install MotionEye manually. Well described here: https://github.com/ccrisan/motioneye/wiki/Install-On-Raspbian.<br>
+I‘ve made all coding with Python over the programming software „Geany“. The programing should calculate next sunrise/sunset automatically every minute and decide, what's the current situation (day/night) and turn on/off the IR filter over GPIO-17. The Python libraries need an additional installation to use the sunrise/sunset calculations from “ephem”, that can be made very easy with this command in the terminal window:
 
 <pre><code><B>sudo pip install ephem</B></pre></code>
 
