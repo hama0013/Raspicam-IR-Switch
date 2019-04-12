@@ -20,7 +20,7 @@ The original program is derived from http://rhodesmill.org/pyephem/ The changes 
 - additional decision of current situation (day/night), text output, set of the IR pin
 - cyclically call every 60 seconds
 
-Take the code from this repository: horizont.py and start at your Raspi with following command:
+Take the code from this repository: "**horizont.py**" and start at your Raspi with following command:
 
 <pre><code><B>python horizont.py</B></pre></code>
 
