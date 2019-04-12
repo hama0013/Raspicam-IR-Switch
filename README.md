@@ -16,6 +16,8 @@ Take the code from this repository: "<B>horizont.py</B>" and start at your Raspi
 
 <pre><code><B>python horizont.py</B></pre></code>
 
+![ScreenShot](https://raw.githubusercontent.com/i-saumitra/Voice-controlled-MP3-Player/master/screenshot.jpg)
+
 
 
 
